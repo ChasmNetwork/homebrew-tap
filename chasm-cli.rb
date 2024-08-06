@@ -4,10 +4,10 @@ class ChasmCli < Formula
   version "latest"
 
   if Hardware::CPU.arm?
-    url "https://github.com/ChasmNetwork/chasm-cli/releases/download/latest/chasm-cli-darwin-arm64-latest.tar.gz"
+    url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v0.0.1/chasm-cli-darwin-arm64-v0.0.1.tar.gz"
     sha256 "53993b7e0b7591b5d96170983fe6ba60239d1406b3f416cff21c0988c04d44d8"
   else
-    url "https://github.com/ChasmNetwork/chasm-cli/releases/download/latest/chasm-cli-darwin-x64-latest.tar.gz"
+    url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v0.0.1/chasm-cli-darwin-x64-v0.0.1.tar.gz"
     sha256 "bd411f701c1a4a5e80e1231008bac6ba95815981e1a566f3c8253dcafc271f5b"
   end
 
