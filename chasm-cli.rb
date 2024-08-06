@@ -18,8 +18,16 @@ class ChasmCli < Formula
     sha256 "38098c5879ccd7ae70cc34fb664279ba4b814edb48d32ed2bca4b5d06d685383"
   end
 
-  def install
-    bin.install "chasm-cli"
+ def install
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cli-macos-arm64" => "chasm-cli"
+    elsif OS.mac? && Hardware::CPU.intel?
+      bin.install "cli-macos-x64" => "chasm-cli"
+    elsif OS.linux? && Hardware::CPU.intel?
+      bin.install "cli-linux-x64" => "chasm-cli"
+    elsif OS.linux? && Hardware::CPU.arm?
+      bin.install "cli-linux-arm64" => "chasm-cli"
+    end
   end
 
   test do
