@@ -20,13 +20,13 @@ class ChasmCli < Formula
 
  def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "cli-macos-arm64" => "chasm-cli"
+      bin.install "cli-macos-arm64" => "chasm"
     elsif OS.mac? && Hardware::CPU.intel?
-      bin.install "cli-macos-x64" => "chasm-cli"
+      bin.install "cli-macos-x64" => "chasm"
     elsif OS.linux? && Hardware::CPU.intel?
-      bin.install "cli-linux-x64" => "chasm-cli"
+      bin.install "cli-linux-x64" => "chasm"
     elsif OS.linux? && Hardware::CPU.arm?
-      bin.install "cli-linux-arm64" => "chasm-cli"
+      bin.install "cli-linux-arm64" => "chasm"
     end
   end
 
