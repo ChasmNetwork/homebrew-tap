@@ -31,6 +31,6 @@ class ChasmCli < Formula
   end
 
   test do
-    system "#{bin}/chasm-cli", "--version"
+    system "#{bin}/chasm", "--version"
   end
 end
