@@ -6,16 +6,16 @@ class ChasmCli < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v#{version}/chasm-cli-darwin-x64-v#{version}.tar.gz"
-    sha256 "059bd8da35857628711259fad407ef098be8fa27f275b04323d0faab4fbf0e49"
+    sha256 "d0ac6a54810b8f8291d423b6942326ffeedab97c75f5b225df99c13e361ffe0a"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v#{version}/chasm-cli-darwin-arm64-v#{version}.tar.gz"
-    sha256 "1f4cbc5243c44e069d5652fe3783c98bd169da4560f00308c60ed084d79bda6e"
+    sha256 "69cd9cc6e06d31db9c318a6d9756ab168ff1978bc109bd9c0361172e5918e5de"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v#{version}/chasm-cli-linux-x64-v#{version}.tar.gz"
-    sha256 "11415d0096ce77ab02a0cf1618f884c764456a887f1eb469064c1217db1c25a7"
+    sha256 "6cdc41b84474a719f212988ed583268c87bb4c87fe2b8985b9ced592c6fa5823"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/ChasmNetwork/chasm-cli/releases/download/v#{version}/chasm-cli-linux-arm64-v#{version}.tar.gz"
-    sha256 "4ff1e332eb93d91b9e6da11c47fb28e2feabb5ce8be7ee4082b5f3fcb7565684"
+    sha256 "da2a4c810d42e668804fb97fe0b7168d8e7d247b4d4e0e765be4f77a36481b06"
   end
 
  def install
